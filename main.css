@@ -17,6 +17,10 @@ img {
   width: 80%;
 }
 
+#titre {
+	width: 80%;
+}
+
 p{
 	font-weight: bold;
 }
@@ -64,4 +68,7 @@ p{
 
 audio {
   margin: 0 0 0 5px;
+  width: 30%;
+  min-height: 3em;
+  min-width: 300px;
 }

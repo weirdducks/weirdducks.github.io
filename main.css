@@ -4,12 +4,20 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   line-height: 1.7rem;
-  background: no-repeat linear-gradient(120deg, #ff9bca, #fccce3);
+  background: #ff9bca;
   min-height: 100%;
+  background-size: 60px 60px;
+  background-image:
+    linear-gradient(to right, #35ab96 1px, transparent 1px),
+    linear-gradient(to bottom, #35ab96 1px, transparent 1px);
 }
 
 img {
   width: 80%;
+}
+
+p{
+	font-weight: bold;
 }
 
 /* The sidebar menu */

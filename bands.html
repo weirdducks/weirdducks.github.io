@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ducks Playlist</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open Sans" rel="stylesheet">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
+    <!--
+	<link rel="icon" type="image/x-icon" href="./images/montreal-favicon.ico">
+	<meta property="og:title" content="Montreal Promoter Quiz" />
+	<meta property="og:description" content="Which Montreal promoter are you?" />
+	<meta property="og:image" content="http://tuckermedskevin.github.io/images/montrealpromoter.png" />
+	<meta property="og:image:secure_url" content="https://tuckermedskevin.github.io/images/montrealpromoter.png" />
+	<meta property="og:url" content="https://tuckermedskevin.github.io/montreal-promoter-quiz.html" />-->
+</head>
+
+<body>
+<div class="sidenav">
+  <img src="./images/waporwave-duck.webp" alt="melting smiley">
+</div>
+<div class="main">
+<div>
+Hanako<p>
+<audio id="audio0" controls>
+  <source src="./songs/hanako-battery.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div>
+Love Language<p>
+<audio id="audio1" controls>
+  <source src="./songs/love-language-ripples.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+</div>
+
+<script>
+for (let i = 0; i < 2; i++) {
+console.log("audio".concat(i));
+  var audio = document.getElementById("audio".concat(i));
+  audio.volume = 0.5;
+}
+</script>
+
+</body>
+</html>

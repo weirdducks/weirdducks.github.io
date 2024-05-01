@@ -67,7 +67,7 @@ p{
 }
 
 audio {
-  margin: 0 0 0 5px;
+  margin: 0 0 1em 5px;
   width: 30%;
   min-height: 3em;
   min-width: 300px;

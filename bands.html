@@ -24,24 +24,33 @@
 <p>Hanako</p>
 <p><audio id="audio0" controls>
   <source src="./songs/hanako-battery.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
+Your browser does not support html5.
 </audio></p>
 </div>
 <div>
 <p>Love Language</p>
 <p><audio id="audio1" controls>
   <source src="./songs/love-language-ripples.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
+Your browser does not support html5.
 </audio></p>
 </div>
 </div>
 
 <script>
-for (let i = 0; i < 2; i++) {
-console.log("audio".concat(i));
-  var audio = document.getElementById("audio".concat(i));
-  audio.volume = 0.5;
+var audioss = document.getElementsByTagName('audio');
+for(var i = 0, len = audioss.length; i < len;i++){
+        audioss[i].volume = 0.5;
 }
+</script>
+<script>
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
 </script>
 
 </body>

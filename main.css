@@ -60,3 +60,7 @@ p{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+audio {
+  margin: 0 0 0 5px;
+}
